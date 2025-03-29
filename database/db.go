@@ -16,10 +16,10 @@ func ConnectDatabase() {
     dsn := os.Getenv("DATABASE_URL")
     db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
     if err != nil {
-        log.Fatal("Nie udało się połączyć z bazą danych:", err)
+        log.Fatal("Error with connecting to data base:", err)
     }
 
     db.AutoMigrate(&models.SwiftCode{})
     DB = db
-    fmt.Println("Połączono z bazą danych")
+    fmt.Println("Connected to data base")
 }

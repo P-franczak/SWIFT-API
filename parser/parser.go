@@ -32,7 +32,7 @@ func ParseSwiftCSV(filePath string) error {
             CountryName:   strings.ToUpper(record[4]),
             IsHeadquarter: isHQ,
         }
-        database.DB.Create(&swiftCode)
+        database.DB.Create(swiftCode)
     }
     return nil
 }
