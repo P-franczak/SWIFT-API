@@ -155,11 +155,3 @@ To polecenie:
 - Usuwa wszystkie powiązane kontenery.
 
 ---
-
-## 📩 Kontakt
-
-Jeśli masz pytania lub sugestie, skontaktuj się ze mną na [LinkedIn](https://www.linkedin.com/in/twoj-profil/) lub otwórz issue w repozytorium.
-
----
-
-Teraz Twój projekt jest gotowy do udostępnienia na GitHubie! 🚀
