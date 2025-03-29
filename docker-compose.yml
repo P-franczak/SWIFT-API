@@ -1,0 +1,19 @@
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: swiftdb
+    ports:
+      - '5433:5432'
+
+  app:
+    build: .
+    ports:
+      - '8080:8080'
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgres://user:password@db:5432/swiftdb?sslmode=disable
